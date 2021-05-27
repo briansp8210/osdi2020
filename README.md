@@ -12,8 +12,7 @@
 
 ## How to run
 
-`make run`
-
-## Architecture
-
-**WIP**
+```
+make run
+miniterm.py --eol=LF ${PORT} 115200
+```
