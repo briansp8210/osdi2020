@@ -29,8 +29,8 @@ void test_command1(void) {
     fork();
     while(cnt < 10) {
       // address should be the same across tasks, but the cnt should be increased indepndently
-      printf("task id: %u, sp: %#x cnt: %u\n", get_taskid(), &cnt, cnt++);
-      delay(1000000);
+      printf("task id: %u, &cnt: %#x cnt: %u\n", get_taskid(), &cnt, cnt++);
+      delay(20000000);
     }
     // all childs exit
     exit(0);
